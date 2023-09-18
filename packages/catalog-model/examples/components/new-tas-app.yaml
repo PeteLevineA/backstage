@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: New TAS App
+  name: new-tas-app
   # This is an extra long description with Markdown
   description: |
     [New TAS App](new-tas-app-shy-topi-tg.apps.usafablue.cf-app.com) example App Accelerator App
