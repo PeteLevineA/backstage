@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-a
+  description: Team A Group
+spec:
+  type: department
+  # Intentional no profile for testing
+  parent: demo-corp
+  children: [development]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: frank.tiernan
+spec:
+  profile:
+    displayName: frank.tiernan
+    email: frank.tiernan@vmware.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [team-a,team-b,team-c]

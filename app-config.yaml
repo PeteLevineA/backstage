@@ -33,8 +33,12 @@ backend:
   listen:
     port: 7007
   database:
-    client: better-sqlite3
-    connection: ':memory:'
+    client: mysql2
+    connection:
+      host: localhost
+      port: 3306
+      user: root
+      password: change-me
   cors:
     origin: http://localhost:3000
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
