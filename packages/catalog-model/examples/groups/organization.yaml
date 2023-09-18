@@ -24,3 +24,6 @@ metadata:
 spec:
   targets:
     - ./development.yaml
+    - ./team-a.yaml
+    - ./team-b.yaml
+    - ./team-c.yaml
